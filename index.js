@@ -1340,6 +1340,18 @@ const executionPage = (
       justify-content: center;
       align-items: center;
     }
+    .video-brand { 
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px; 
+    border: 2px solid var(--glass-border); 
+    box-shadow: 0 0 20px rgba(138, 99, 210, 0.3); 
+    display: block; 
+    margin: 0 auto 16px; 
+    height: auto;
+    aspect-ratio: 16/9;
+    transition: all 0.3s ease;
+}
     .connected::before {
       content: '';
       width: 10px;
@@ -1438,7 +1450,9 @@ const executionPage = (
 </head>
 <body>
   <div class="container">
-    <img src="https://files.catbox.moe/z7xdq5.png" alt="Logo" class="logo" />
+    <video autoplay muted loop class="video-brand">
+          <source src="https://files.catbox.moe/sxmhgw.mp4" type="video/mp4">
+        </video>
     <div class="username">Olá, ${username || 'Anônimo'}</div>
     <div class="connected">CONNECTED</div>
 
@@ -1446,11 +1460,11 @@ const executionPage = (
 
     <div class="select-wrapper">
       <select id="modeSelect">
-        <option value="" disabled selected>---Select Bugs---</option>
-        <option value="AndrosDelay">S-P DELAY ANDROID</option>
-        <option value="AndrosDelay">S-P DELAY IPHONE</option>
-        <option value="AndrosDelay">S-P DELAY HARD</option>
-        <option value="AndrosDelay">S-P SEDOT KUOTA</option>
+        <option value="" disabled selected>      Select Bugs</option>
+        <option value="anrooodelayy">S-P DELAY ANDROID</option>
+        <option value="delayyiosss">S-P DELAY IPHONE</option>
+        <option value="delayyiosss">S-P DELAY HARD</option>
+        <option value="sedotkuotaa">S-P SEDOT KUOTA</option>
       </select>
     </div>
 
