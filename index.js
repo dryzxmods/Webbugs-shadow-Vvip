@@ -1447,11 +1447,10 @@ const executionPage = (
     <div class="select-wrapper">
       <select id="modeSelect">
         <option value="" disabled selected>---Select Bugs---</option>
-        <option value="AndrosDelay">S-P DELAY</option>
+        <option value="AndrosDelay">S-P DELAY ANDROID</option>
+        <option value="AndrosDelay">S-P DELAY IPHONE</option>
         <option value="AndrosDelay">S-P DELAY HARD</option>
-        <option value="AndrosDelay">S-P BULDOZER</option>
-        <option value="AndrosDelay">S-P BULDOZER HARD</option>
-        <option value="AndrosDelay">S-P COMBO DELAY</option>
+        <option value="AndrosDelay">S-P SEDOT KUOTA</option>
       </select>
     </div>
 
