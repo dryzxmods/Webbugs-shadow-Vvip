@@ -612,7 +612,7 @@ app.get("/execution", (req, res) => {
       } else if (mode === "anrooodelayy") {
         DelayAndroXIoss(target);
       } else if (mode === "comboxx") {
-        DelayCombox(target):
+        DelayCombox(target);
       } else {
         throw new Error("Mode tidak dikenal.");
       }
